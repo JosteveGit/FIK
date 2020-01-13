@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseTypeActivity"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_settings_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a game type"
+        android:textSize="35sp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/alphabetGameType"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/choose_type_bg_is_a_gradient"
+            android:padding="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alphabet"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play games related to alphabets and choose difficulty ranging from easy to hard"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/numberGameType"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/choose_type_bg_is_a_gradient2"
+            android:padding="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play games related to numbers and choose difficulty ranging from easy to hard"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
