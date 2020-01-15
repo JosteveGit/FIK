@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed({
-            startActivity(Intent(this,ChooseTypeActivity::class.java))
+            startActivity(Intent(this,SelectAlphabet::class.java))
             finish()
         },2500L)
     }

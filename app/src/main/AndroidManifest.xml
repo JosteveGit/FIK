@@ -17,12 +17,6 @@
             android:name=".SettingsActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".SelectDifficultyActivity"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".ChooseTypeActivity"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".MainActivity"
             android:screenOrientation="landscape">
             <intent-filter>
